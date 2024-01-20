@@ -155,13 +155,260 @@
 //     document.write(a+" This is for loop <br>")
 // }
 // even odd number with for *****************
-var num=1;
-for(num=1;num<50;num++){
-    if(num%2==0){
-         document.write(num+" Even");
+// var num=1;
+// for(num=1;num<50;num++){
+//     if(num%2==0){
+//          document.write(num+" Even");
+//     }
+//     if(num%2==1){
+//         document.write(num+" Odd");
+//     }
+// }
+// greatest number with if ************************
+// var a=2, b=4, c=-4;
+// if(a>b && a>c){
+//     document.write(a+"is greater.")
+// }
+// else if(b>a && b>c){
+//     document.write(b+"is greater.")
+// }
+// else if(c>a && c>b){
+//     document.write(c+"is greater.")
+// }
+// largest number with from array with for loop *******************
+// var a=[50001,112,43,24,15];
+// for(var i=0;i<=a.length;i++){
+//     if(a[i]<a[i+1]){
+//         a[i]=a[i+1]
+//     }else{
+//         console.log(a[i]);
+//         break;
+//     }
+// }
+// nested loop ********************
+// for(a=1;a<=5;a++){
+//     for(b=1;b<=a;b++){
+//         document.write(b);
+//     }
+//     document.write("<br>")
+// }
+// array ********************
+// var a=[1,2,3,4,5];
+// for(var i=0;i<a.length;i++){
+//     document.write(a[i]);
+//     document.write("<br>");
+// }
+// array 2 ********************
+// var a=new Array();
+// var b=5;
+// for(var j=0;j<b;j++){
+//     a[j]=prompt('enter value');
+// }
+// for(var i=0;i<a.length;i++){
+//     document.write(a[i]);
+//     document.write("<br>");
+// }
+// Multidimentional array **************
+// var a =[["ali",23,"comp","student"],["Saqib",25,"Eng","Teacher"],["Faseeh",26,"Urdu","student"]];
+// document.write("<table border=2px>")
+// for(var i=0;i<a.length;i++){
+// document.write("<tr>")
+//     for(var j=0;j<a[0].length;j++){
+// document.write("<td>")
+//     document.write(" "+a[i][j]);
+// document.write("</td>")
+//     }
+//     document.write("<br>");
+// document.write("</tr>")
+// }
+// document.write("</table>")
+// delete and update in array *************
+// var a=[2,3,4,5,6,7];
+// delete a[2];
+// document.write(a);
+// functions of array ****************
+// sort in array ********************
+//  var a=[12,33,4,5,6,17];
+// a.sort();
+// document.write(a);
+// pop ****************
+// removes last element from array 
+// var a=[12,33,4,5,6,17];
+// a.pop();
+// document.write(a);
+// push ****************
+// adds element at last in  array 
+// var a=[12,33,4,5,6,17];
+// a.push(22);
+// document.write(a);
+// shift *******************
+// removes element from start in  array 
+// var a=[12,33,4,5,6,17];
+// a.shift();
+// document.write(a);
+// unshift *******************
+// adds element at start in  array 
+// var a=[12,33,4,5,6,17];
+// a.unshift("Ahmed");
+// document.write(a);
+// Array concat **************
+// var a =[1,2,3,4,5];
+// var b =[6,7,8,9];
+// var c = a.concat(b);
+// we can concat more than two array as well
+// var d=[11,12,13];
+// var e = a.concat(b,d);
+// document.write(e);
+// join in array **************
+// var d=[11,12,13,14,15];
+// var e = d.join("-");
+// document.write(e);
+// document.write("<br>");
+// var f = d.join(" ");
+// document.write(f);
+// slice in array******************
+// it brings value require within given range 
+// var a=["ali","ahmed","taha","yaseen"] ;
+// var b= a.slice(1,3);
+// document.write(b);
+// slice with negative ************
+// var a=["ali","ahmed","taha","yaseen"];
+// var b= a.slice(-3,-1);
+// document.write(b);
+// splice in array ****************
+// inserts new value into an array with or without deleting previous values 
+// var a=["ali","ahmed","taha","yaseen"] ;
+// var b= a.splice(2,0,"Saqib","Faseeh");
+// document.write(a);
+// more splice deleting
+// var a=["ali","ahmed","taha","yaseen"] ;
+// var b= a.splice(2,2,"Saqib","Faseeh");
+// document.write(a);
+// just deleting with splice 
+// var a=["ali","ahmed","taha","yaseen"] ;
+// var b= a.splice(2,3);
+// document.write(a);
+// Array.isArray ****************
+// var a=[1,2,3,4,5];
+// var a=22;
+// document.write(a+"<br>");
+// if(Array.isArray(a)){
+//     document.write("It's Array.");
+// }else{
+//     document.write("It's not an Array.");
+// }
+// loop se khel kood *************
+// for(var i=0;i<=5;i*=2){
+//     console.log("hi"+"<br>");
+// }
+// for(;;){
+//     console.log("hi"+"<br>");
+// }
+// index of array **************
+// var a=["ahmed","ali","Saqib","ali","lala"];
+// var b = a.indexOf("ali",2);
+// document.write(b);
+// firstindex ***********
+// var a=["ahmed","ali","Saqib","ali","lala"];
+// var b = a.lastIndexOf("ali");
+// document.write(b);
+// .include ****************
+// var a=["ahmed","ali","Saqib","ali","lala"];
+// var b =a.includes("Saqib");
+// document.write(b);
+// some function ********
+// one condition true then true.
+// var a=[12,34,51,22];
+// var b =a.some(findAge);
+// function findAge(x){
+// return x >=50;
+// }
+// document.write(b);
+// every function ***********
+// all condition should be true 
+// var a=[12,33,11,5,20];
+// var b = a.every(findValue);
+// function findValue(x){
+//     return x<=30;
+// }
+// document.write(b);
+// find ********************
+// it gives the value which meets condition 
+// var a=[12,33,11,5,20];
+// var b = a.find(findValue);
+// function findValue(x){
+//     return x>=30;
+// }
+// document.write(b);
+// findindex *******************
+// var a=[12,33,11,5,20];
+// var b = a.findIndex(find_Index);
+// function find_Index(x){
+//     return x>=30;
+// }
+// document.write(b);
+// filter 
+// it returns a filtered array which after checking condiiton 
+// var a=[12,33,11,5,20];
+// var b = a.filter(filterArray);
+// function filterArray(x){
+//     return x>=20;
+// }
+// document.write(a);
+// document.write("<br>");
+// document.write(b);
+// tostring **************
+// var a=[12,33,11,5,20];
+// var b= a.toString();
+// document.write(b);
+// document.write("<br>");
+// document.write(typeof(b));
+// value of array 
+// it just return array's value 
+// var a=[12,33,11,5,20];
+// var b= a.valueOf();
+// document.write(b);
+// document.write("<br>");
+// document.write(typeof(b));
+// fill ******************
+//  var a=[12,33,11,5,20];
+// var b= a.fill(12,22);
+// document.write(b);
+// document.write("<br>");
+// document.write(typeof(b));
+// foreach loop ***************
+var a={
+    "fname":"Shahid",
+    "lname":"Afridi",
+    "age":23,
+    "contact":"03021542685",
+    "email":"Ali@gmail.com",
+    "subject":["eng","urdu","comp"],
+    "Studies":function(){
+      return 222;
+    },
+    "fullname":function(){
+      return this.fname+this.lname;
+    },
+    "littleBro":{
+      "class":5,
+      "school":"Vision",
+      "age":11,
     }
-    if(num%2==1){
-        document.write(num+" Odd");
-    }
-}
+  }
+  
+  console.log(a);
+  console.log(a.age);
+  console.log(a.contact);
+  console.log(a.fullname());
+  console.log(a.Studies());
+  console.log(a.subject);
+  console.log(a.subject[2]);
+  console.log(a.littleBro);
+  
 
+
+
+
+
+ 
