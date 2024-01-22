@@ -308,7 +308,7 @@
 // var a=["ahmed","ali","Saqib","ali","lala"];
 // var b = a.indexOf("ali",2);
 // document.write(b);
-// firstindex ***********
+// Lastindex ***********
 // var a=["ahmed","ali","Saqib","ali","lala"];
 // var b = a.lastIndexOf("ali");
 // document.write(b);
@@ -347,8 +347,8 @@
 //     return x>=30;
 // }
 // document.write(b);
-// filter 
-// it returns a filtered array which after checking condiiton 
+// filter ******************
+// it returns a filtered array which after checking condition 
 // var a=[12,33,11,5,20];
 // var b = a.filter(filterArray);
 // function filterArray(x){
@@ -372,40 +372,196 @@
 // document.write(typeof(b));
 // fill ******************
 //  var a=[12,33,11,5,20];
-// var b= a.fill(12,22);
+// var b= a.fill("saddam");
 // document.write(b);
 // document.write("<br>");
 // document.write(typeof(b));
 // foreach loop ***************
-var a={
-    "fname":"Shahid",
-    "lname":"Afridi",
-    "age":23,
-    "contact":"03021542685",
-    "email":"Ali@gmail.com",
-    "subject":["eng","urdu","comp"],
-    "Studies":function(){
-      return 222;
-    },
-    "fullname":function(){
-      return this.fname+this.lname;
-    },
-    "littleBro":{
-      "class":5,
-      "school":"Vision",
-      "age":11,
-    }
-  }
-  
-  console.log(a);
-  console.log(a.age);
-  console.log(a.contact);
-  console.log(a.fullname());
-  console.log(a.Studies());
-  console.log(a.subject);
-  console.log(a.subject[2]);
-  console.log(a.littleBro);
-  
+
+
+
+// object ***********
+// var a={
+//     "fname":"Shahid",
+//     "lname":"Afridi",
+//     "age":23,
+//     "contact":"03021542685",
+//     "email":"Ali@gmail.com",
+//     "subject":["eng","urdu","comp"],
+//     "Studies":function(){
+//       return 222;
+//     },
+//     "fullname":function(){
+//       return this.fname+this.lname;
+//     },
+//     "littleBro":{
+//       "class":5,
+//       "school":"Vision",
+//       "age":11,
+//     }
+//   }
+//   console.log(a);
+//   console.log(a.age);
+//   console.log(a.contact);
+//   console.log(a.fullname());
+//   console.log(a.Studies());
+//   console.log(a.subject);
+//   console.log(a.subject[2]);
+//   console.log(a.littleBro);
+  // object two ************
+  // var a = new Object();
+  // a.firstname = "Ali";
+  // a.lastname = "Ahmed";
+  // a.salary = 12000;
+  // document.write(a.salary);
+  // document.write("<br>")
+  // document.write(a.firstname);
+  // document.write("<br>")
+  // document.write(a.lastname);
+  // array of objects ********************
+//   var a = [
+//     {"name":"Ali",age: 22},
+//     {"name":"Ahmed",age: 12},
+//     {"name":"Saqib",age: 32},
+// ];
+// for(var i=0;i<a.length;i++){
+//   document.write(a[i].name+""+a[i].age+"<br>");
+// }
+// const *************************
+// const x = 22;
+// x=33;
+// const a = [2,3,4,5,6];
+// a = [2,3,4] cannot assign value to const another value.
+// only way to change a const value in array and object is to use index or property.
+// a[3] = 33;
+// document.write(a);
+// const b = {"name":"ali","class":12}
+// b.name = "Saqib";
+// document.write(b.name);
+// for in loop*********************
+// it is used to get values from object 
+// var obj = {
+//   "name":"Saqib",
+//   "class":10,
+//   "fees":200,
+// };
+// for(var i in obj){
+//   document.write(obj[i]+"<br>");
+// }
+// map ***********************
+// for array 
+// var a = [12,2,3,5,6];
+// var b = a.map(newarray);
+// document.write(b);
+// function newarray(i){
+//   return i*2;
+// }
+// for object 
+// var obj = [{
+//   "name":"Saqib",
+//   "class":10,
+//   "fees":200,
+// }];
+// var b = obj.map(newobj);
+// document.write(b);
+// function newobj(i){
+//   return i.name + " " + i.class;
+// }
+// String function *********************************
+// var fname="Ali is a boy and Ali is amazing boy";
+// document.write(fname.length);
+// document.write("<br>");
+// document.write(fname.toUpperCase());
+// document.write("<br>");
+// document.write(fname.toLowerCase());
+// document.write("<br>");
+// document.write(fname.includes("is"));
+// document.write("<br>");
+// document.write(fname.startsWith("Ali"));
+// document.write("<br>");
+// document.write(fname.endsWith("boy"));
+// document.write("<br>");
+// search return position of value
+// document.write(fname.search("Ali"));
+// document.write("<br>");
+// match gives the matching value
+// it is taking Ali from string and making an array.
+// document.write(fname.match(/Ali/g));
+// document.write("<br>");
+// document.write(fname.indexOf("boy"));
+// document.write("<br>");
+// document.write(fname.lastIndexOf("boy"));
+// document.write("<br>");
+// document.write(fname.replace(/boy/g,"girl"));
+// document.write("<br>");
+// trim*** 
+// it trims the space 
+// var b = "           Hello Boys. "
+// var c = b.trim()
+// alert(c);
+// charAt
+// charCodeAt
+// fromCharCode
+// concat
+// split
+// repeat
+// slice
+// substr
+// substring
+// toString
+// valueOf
+// js function ***************************
+// var a=10;
+// var b=Number(a);
+// var b = parseInt(a);
+// var b = parseFloat(a);
+// var b = Number.isInteger(a);
+// var b = isFinite(a);
+// var b = a.toFixed(3);
+// var b = a.toPrecision(3);
+// document.write(b);
+// Math function ***********************
+// ceil round up to nearest value;
+// var a=22.33;
+// var b = Math.ceil(a);
+// document.write(b);
+// floor rounds down to nearest value;
+// var a=22.33;
+// var b = Math.floor(a);
+// document.write(b);
+// round it rounds up if .5 else rounds down.
+ // var a=22.5;
+ // var b = Math.round(a);
+ // document.write(b);
+// truncate 
+ // var a=22.5232332;
+ // var b = Math.trunc(a);
+ // document.write(b);
+// max 
+//  var b = Math.max(22,44,55,66);
+//  document.write(b);
+// // min
+// var b = Math.min(22,44,55,66);
+//  document.write(b);
+// sqrt 
+// var b = Math.sqrt(64);
+//  document.write(b);
+// cbrt = cube root 
+// var b = Math.cbrt(125);
+//  document.write(b);
+// power 
+// var b = Math.pow(4,3);
+//  document.write(b);
+// random it gives random value from 0 to 1;
+// var b = Math.floor((Math.random()*10)+1);
+//  document.write(b);
+// abs it returns absolute value
+// var b = Math.abs(-12.33);
+//  document.write(b);
+// pi value 
+// var b = Math.PI;
+//  document.write(b);
+
 
 
 
