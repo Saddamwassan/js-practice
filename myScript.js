@@ -561,6 +561,139 @@
 // pi value 
 // var b = Math.PI;
 //  document.write(b);
+// Get in Date and Time ****************************
+// var a= new Date();
+// document.write(a);
+// dateString ****
+// var a= new Date();
+// var b = a.toDateString();
+// document.write(b);
+// get date ****
+// var a= new Date();
+// var b = a.getDate();
+// document.write(b);
+// getfullyear ****
+// var a= new Date();
+// var b = a.getFullYear();
+// document.write(b);
+// get month ****
+// var a= new Date();
+// var b = a.getMonth();
+// document.write(b);
+// get day ****
+// var a= new Date();
+// var b = a.getDay();
+// document.write(b);
+// get hours ****
+// var a= new Date();
+// var b = a.getHours();
+// document.write(b);
+// get minutes ****
+// var a= new Date();
+// var b = a.getMinutes();
+// document.write(b);
+// get seconds ****
+// var a= new Date();
+// var b = a.getSeconds();
+// document.write(b);
+// get millisecs ****
+// var a= new Date();
+// var b = a.getMilliseconds();
+// document.write(b);
+// Set in Date and Time **********
+//  var a= new Date();
+// var b = a.setDate(31);
+// document.write(a);
+// set full year ****
+//  var a= new Date();
+// var b = a.setFullYear(2025);
+// document.write(a);
+// set month ****
+//  var a= new Date();
+// var b = a.setMonth(11);
+// document.write(a);
+// set hours ****
+//  var a= new Date();
+// var b = a.setHours(5);
+// document.write(a);
+// set minutes ****
+//  var a= new Date();
+// var b = a.setMinutes(22);
+// document.write(a);
+// set seconds ****
+//  var a= new Date();
+// var b = a.setSeconds(1);
+// document.write(a);
+// set milliseconds ****
+//  var a= new Date();
+// var b = a.setMilliseconds(2000);
+// document.write(a);
+
+// DOM Data Object Model A programming interface use to change webpages
+
+// set methods
+// innerText 
+// innerHtml
+// Attribute
+// SetAttribute 
+// removeAttribute
+// example 
+// var element;
+// document.getElementById("#container").innerHTML= "<h2>Developers World</h2>";
+// document.getElementsByClassName("box").attributes[0].value = "hi";
+// document.getElementsByTagName("header").setAttribute("style","background-color:blue");
+// document.getElementsByTagName("header").removeAttribute("style");
+// querySelector 
+// querySelectorAll
+// Css with DOM ****************
+// Style 
+// className
+// classlist
+// addEventListener method ****************
+// we use event listener to give multiple events to same class 
+// .onclick method*********
+// addEventListener*********
+// document.getElementById("header").addEventListener("mouseleave",changeColor);
+// document.getElementById("header").addEventListener("click",removeColor);
+
+// function changeColor(){
+//   document.getElementById("header").style.background = "blue";
+// }
+// function removeColor(){
+//    document.getElementById("header").removeEventListener('mouseleave',changeColor)
+// }
+// // class list in DOM ********
+// document.getElementById("header").addEventListener("mouseenter",addColor);
+// function addColor(){
+// document.getElementById("header").classList.add("color", "apple", "cat");
+  // }
+  // remove class list *****
+//   document.getElementById("header").addEventListener("click",removeColor);
+// function removeColor(){
+// document.getElementById("header").classList.remove("color");
+// var l = document.getElementById("header").classList.length;
+// console.log(l);
+//   }
+// toggle ************
+// document.getElementById("header").addEventListener("click",addColor);
+// function addColor(){
+// document.getElementById("header").classList.add("value");
+// document.getElementById("header").classList.toggle("color");
+// var a= document.getElementById("header").classList.item(1);
+// console.log(a);
+// var b= document.getElementById("header").classList.contains("value");
+// console.log(b);
+//   }
+// Dom Traversal Methods ******************
+
+
+
+
+
+
+
+
+
 
 
 
