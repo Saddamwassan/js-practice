@@ -2,10 +2,11 @@
     padding:0;
     margin:0;
 }
+
 header{
     background-color: lightseagreen;
 }
-ul{
+#list{
     list-style: none;
    display: flex;
 }
@@ -23,3 +24,10 @@ li{
 .color{
     background-color:goldenrod;
 }
+#form{
+    line-height: 30px;
+}
+#box{
+    border:2px solid blue;
+}
+

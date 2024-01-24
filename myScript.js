@@ -534,9 +534,9 @@
  // var b = Math.round(a);
  // document.write(b);
 // truncate 
- // var a=22.5232332;
- // var b = Math.trunc(a);
- // document.write(b);
+//  var a=22.5232332;
+//  var b = Math.trunc(a);
+//  document.write(b);
 // max 
 //  var b = Math.max(22,44,55,66);
 //  document.write(b);
@@ -667,7 +667,7 @@
 // function addColor(){
 // document.getElementById("header").classList.add("color", "apple", "cat");
   // }
-  // remove class list *****
+  // remove class list ********
 //   document.getElementById("header").addEventListener("click",removeColor);
 // function removeColor(){
 // document.getElementById("header").classList.remove("color");
@@ -683,12 +683,122 @@
 // console.log(a);
 // var b= document.getElementById("header").classList.contains("value");
 // console.log(b);
-//   }
+// }
 // Dom Traversal Methods ******************
+// parentElement and parentNode
+// var a = document.getElementById("list").parentElement.style.background = "green";
+// console.log(a);
+// children and childNode *****
+// not working check out later
+// Children only returns html tage whereas childNodes return textnodes as well 
+// childNode *****
+// var a = document.getElementById("content").childNodes;
+// console.log(a);
+// firstChild*****
+// firstChild returns the first child node (an element node, a text node or a comment node). Whitespace between elements are also text nodes.
+// var a = document.getElementById("content").firstChild;
+// console.log(a);
+// firstElementChild********
+// firstElementChild returns the first child element (not text and comment nodes).
 
-
-
-
+// var a = document.getElementById("content").firstElementChild.style.background = "green";
+// console.log(a);
+// lastChild***********
+// cannot style with first or last child because it contains space 
+// var a = document.getElementById("content").lastChild;
+// console.log(a);
+// lastElementChild
+// var a = document.getElementById("content").lastElementChild.style.background = "yellow";
+// console.log(a);
+// previousSibling and previousElementSibling**************************24/1/24
+// var a = document.getElementById("content").previousSibling;
+// console.log(a);
+// var b = document.getElementById("content").previousElementSibling;
+// console.log(b);
+// NextSibling and NextElementSibling**************************
+// var a = document.getElementById("content").NextSibling;
+// console.log(a);
+// var b = document.getElementById("content").NextElementSibling;
+// console.log(b);
+// create tag element 
+// var element = document.createElement("p");
+// console.log(element);
+// create text  **********
+// var text = document.createTextNode("Hello gentlemen!");
+// console.log(text);
+// create comment element *********
+// var comment = document.createComment("This is comment");
+// console.log(comment);
+// append it is used to put a value in container at last index********************
+// var element = document.createElement("p");
+// var text = document.createTextNode("Hello gentlemen!");
+// element.appendChild(text);
+// document.querySelector(".para").appendChild(element)
+// console.log(element);
+// var firstText = document.querySelector(".para");
+// firstText.insertBefore(element,firstText.childNodes[0]);
+// adjacent element *********************
+// var element = document.createElement("p");
+// var text = document.createTextNode("This is Great!");
+// element.appendChild(text);
+// var target = document.querySelector(".para");
+// target.insertAdjacentElement("beforebegin",element);
+// adjacent text **********************
+// var element = "This is adjacent text";
+// var target = document.querySelector(".para");
+// target.insertAdjacentText("afterbegin",element);
+// adjacent html *********************
+// var element ="<h2>This is adjacent html</h2>";
+// var target = document.getElementById("content");
+// target.insertAdjacentHTML("afterend",element);
+// replace and remove child in js **************
+// var newitem = document.createElement("li");
+// var item = document.createTextNode("Tomato");
+// newitem.appendChild(item);
+// target = document.getElementById("items");
+// var oldItem = target.children[2];
+// target.replaceChild(newitem,oldItem);
+// remove child ************
+// var target = document.getElementById("items");
+// var oldItem = target.children[2];
+// target.removeChild(oldItem);
+// cloneNode it makes a clone of text or element **************
+// by default cloneNode just take tag of given element so use true.
+// var target= document.getElementById("items").children[0];
+// var clone = target.cloneNode(true);
+// document.getElementById("second-list").appendChild(clone);
+// DOM contains 
+// var body = document.getElementById("body");
+// var value = document.getElementById("list");
+// var a = body.contains(value);
+// console.log(a);
+// hasAttribute ********************
+// var target = document.getElementById("content");
+// var a = target.hasAttribute("class");
+// console.log(a);
+// hasChildNodes ********************
+// var target = document.getElementById("content");
+// var a = target.hasChildNodes();
+// console.log(a);
+// isEqualNode ************************
+// var target = document.getElementById("items").children[2];
+// var target1 = document.getElementById("second-list").firstElementChild;
+// var result = target.isEqualNode(target1);
+// console.log(result);
+// Events ***************************************
+// onfocus 
+function focusIt(a){
+  a.style.background = "orange";
+}
+// onblur 
+function blurIt(a){
+  a.style.background = "";
+}
+// oninput 
+function inputIt(a){
+  var b = a.value;
+  document.getElementById("box").innerHTML = b;
+}
 
 
 
