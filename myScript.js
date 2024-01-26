@@ -733,7 +733,7 @@
 // var element = document.createElement("p");
 // var text = document.createTextNode("Hello gentlemen!");
 // element.appendChild(text);
-// document.querySelector(".para").appendChild(element)
+// document.querySelector(".para").appendChild(element);
 // console.log(element);
 // var firstText = document.querySelector(".para");
 // firstText.insertBefore(element,firstText.childNodes[0]);
@@ -787,19 +787,71 @@
 // console.log(result);
 // Events ***************************************
 // onfocus 
-function focusIt(a){
-  a.style.background = "orange";
-}
+// function focusIt(a){
+//   a.style.background = "orange";
+// }
 // onblur 
-function blurIt(a){
-  a.style.background = "";
-}
+// function blurIt(a){
+//   a.style.background = "";
+// }
 // oninput 
-function inputIt(a){
-  var b = a.value;
-  document.getElementById("box").innerHTML = b;
-}
+// function inputIt(a){
+//   var b = a.value;
+//   document.getElementById("box").innerHTML = b;
+// }
+// 25/1/2024
 
+// 26/1/2024
+// History object 
+// back()
+// forward()
+// go()
+
+// its for window 
+// pageYOffeset it tells how much we have scrolled in y axis.
+// pageXOffeset it tells how much we have scrolled in X axis.
+var a = window.scrollY;
+
+
+// offsetTop 
+// offsetLeft 
+
+// for div
+// scrollTop
+// scrollLeft
+
+// used to find how much width or height scroll has in div
+// scrollWidth 
+// scrollHeight
+ 
+// finds width and height of div borer,padding,scrollbar and margin width included
+// offsetHeight
+// offsetWidth
+
+// finds width and height of div only padding width included
+// clientHeight
+// clientWidth
+
+// mouse properties use mouse events
+// clientX
+// clientY
+// shorthand for clientX and ClientY is x and y.
+document.addEventListener("click",function(e){
+  console.clear();
+  // var a = e.clientX;
+  // var b = e.clientY;
+  // console.log("clientx: "+ a);
+  // console.log("clienty: "+ b);
+  // // shorthand 
+  var a = e.x;
+  var b = e.y;
+  console.log("clientx: "+ a);
+  console.log("clienty: "+ b);
+});
+// these are work same as clientX and clientY and changes if we scroll 
+//  pageX 
+//  pageY 
+// assignment cursor with magic 
 
 
 
