@@ -800,25 +800,71 @@
 //   document.getElementById("box").innerHTML = b;
 // }
 // 25/1/2024
+//  window open ***********
+// var target = document.querySelector("#openwindow");
+// var target1 = document.querySelector("#closewindow");
+// var mywindow;
+// target.addEventListener("click",()=>{
+//  mywindow = window.open("https://codepen.io/saddam-wassan/pen/ExMmpez","_blank","width=200px");
+// });
+// target1.addEventListener("click",()=>{
+//  mywindow.close();
+// });
+// used with open window **********
+// moveto works on absolute position 
+// moveby works on relative position 
+// resizes the window we open *******
+// resizeTo 
+// resizeBy
 
+
+// location object for url bar
+// properties 
+// console.log(location.host);
+// console.log(location.href);
+// console.log(location.pathname);
+// console.log(location.protocol);
+// console.log(location.search);
+// // methods
+// function location(){
+//   location.assign("https://www.youtube.com/");
+// }
+
+// Reload();
+// Replace() removes the history 
 // 26/1/2024
-// History object 
+// History object **************
+// property only one ,length
 // back()
 // forward()
-// go()
+// go() used for both conditions -1 means goes onepage back 1 means
+// goes onepage forward
 
 // its for window 
-// pageYOffeset it tells how much we have scrolled in y axis.
+// pageYOffeset it tells how much we have scrolled in y axis. deprecated
 // pageXOffeset it tells how much we have scrolled in X axis.
-var a = window.scrollY;
+// window.addEventListener("click",function(){
+//   console.log(window.scrollY);
+// });
 
 
 // offsetTop 
 // offsetLeft 
+// var box = document.getElementById("scroll");
+// console.log("button form top:"+box.offsetTop);
+// console.log("button form left:"+box.offsetLeft);
 
 // for div
 // scrollTop
 // scrollLeft
+// var box = document.getElementById("scroll");
+// box.addEventListener("scroll",()=>{
+// console.clear();
+// console.log("button form top:"+ box.scrollTop);
+// console.log("button form left:"+ box.scrollLeft);
+// });
+
+
 
 // used to find how much width or height scroll has in div
 // scrollWidth 
@@ -836,25 +882,63 @@ var a = window.scrollY;
 // clientX
 // clientY
 // shorthand for clientX and ClientY is x and y.
-document.addEventListener("click",function(e){
-  console.clear();
-  // var a = e.clientX;
-  // var b = e.clientY;
-  // console.log("clientx: "+ a);
-  // console.log("clienty: "+ b);
-  // // shorthand 
-  var a = e.x;
-  var b = e.y;
-  console.log("clientx: "+ a);
-  console.log("clienty: "+ b);
-});
-// these are work same as clientX and clientY and changes if we scroll 
+// window.addEventListener("click",function(e){
+//   console.clear();
+//   // var a = e.clientX;
+//   // var b = e.clientY;
+//   // console.log("clientx: "+ a);
+//   // console.log("clienty: "+ b);
+//   // // shorthand 
+//   var a = e.x;
+//   var b = e.y;
+//   console.log("clientx: "+ a);
+//   console.log("clienty: "+ b);
+// });
+// these  work same as clientX and clientY and changes if we scroll 
 //  pageX 
 //  pageY 
 // assignment cursor with magic 
 
+// 27/1/2024
+// key property in js 
+// const target = document.getElementById("keypress");
+// target.addEventListener("keydown",(e)=>{
+//   var key = e.key;
+//   console.clear();
+//   console.log(key);
+// });
+// clipboard events **************
+// oncut 
+// oncopy
+// onpaste
+// const target = document.querySelector("#keypress");
+// // copy ***********
+// target.addEventListener("copy",()=>{
+//   console.log("you copied text");
+//   target.style.backgroundColor = "yellow";
+// });
+// // cut ***********
+// target.addEventListener("cut",()=>{
+//   console.log("you cut text");
+//   target.style.backgroundColor = "green";
+// });
+// // paste ***********
+// target.addEventListener("paste",()=>{
+//   console.log("you pasted text");
+//   target.style.backgroundColor = "lightblue";
+// });
+// online **************
+// offline 
+// const target = document.getElementById("online");
+// window.addEventListener("online",()=>{
+//   target.innerHTML = "online";
+//   console.log("online");
+// });
+// window.addEventListener("offline",()=>{
+//   target.innerHTML = "offline";
+//   console.log("online");
 
-
+// });
 
 
 

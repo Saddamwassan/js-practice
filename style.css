@@ -30,4 +30,15 @@ li{
 #box{
     border:2px solid blue;
 }
-
+/* history page  */
+#scroll{
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+}
+.new-div{
+    width: 1000px;
+}
+#online{
+    height:200px;
+}
