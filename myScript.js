@@ -937,8 +937,53 @@
 // window.addEventListener("offline",()=>{
 //   target.innerHTML = "offline";
 //   console.log("online");
-
 // });
+// // template string ***************
+// // it uses back tics for string With back-ticks, you can use both single and double quotes inside a string:
+// // interpolation ${}*******
+// let fname = "Faseeh";
+// let lname = "Uddin";
+// function fullName(a,b){
+//  return `${fname} ${lname}`;
+// }
+// let result = `He is ${fullName(fname,lname)}`
+// document.write(result);
+// rest operator*************** it must be last parameter otherwise it gives error.
+// used for multiple arguments and it is used when function is created. 
+// function value(name,...arguments){
+//   let sum = 0;
+//   console.log(arguments);
+//   for(let i in arguments){
+//     sum += arguments[i];
+//   }
+//   console.log(`${name} has ${sum} Rupees.`);
+// }
+// value("Ali",22,33,44);
+// spread operator used to spread array into multiple values*******************
+// it is used when calling a function 
+//  for array 
+let a = [22,44,55,66,77];
+// console.log(a);
+// console.log(...a);
+
+let b = [22,44,55,66,77];
+let c = [9,11];
+// let d = b.concat(c)
+// // console.log(d);
+// // same thing with spread operator
+let d = [1,...c,...b,2000];
+// let d = [b,c];
+console.log(d);
+// for object **************
+var obj = {
+  name : "Ali"
+}
+var obj2 = {
+  class: "7th"
+}
+var obj3 = {...obj,...obj2};
+console.log(obj3);
+
 
 
 
