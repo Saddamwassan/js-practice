@@ -962,27 +962,42 @@
 // spread operator used to spread array into multiple values*******************
 // it is used when calling a function 
 //  for array 
-let a = [22,44,55,66,77];
+// let a = [22,44,55,66,77];
 // console.log(a);
 // console.log(...a);
 
-let b = [22,44,55,66,77];
-let c = [9,11];
+// let b = [22,44,55,66,77];
+// let c = [9,11];
 // let d = b.concat(c)
 // // console.log(d);
 // // same thing with spread operator
-let d = [1,...c,...b,2000];
+// let d = [1,...c,...b,2000];
 // let d = [b,c];
-console.log(d);
+// console.log(d);
 // for object **************
-var obj = {
-  name : "Ali"
-}
-var obj2 = {
-  class: "7th"
-}
-var obj3 = {...obj,...obj2};
-console.log(obj3);
+// var obj = {
+//   name : "Ali"
+// }
+// var obj2 = {
+//   class: "7th"
+// }
+// var obj3 = {...obj,...obj2};
+// console.log(obj3);
+// BOM
+// Cookies
+// set cookies 
+    // document.cookie = "address=walkurtTown";
+//    encodeURIComponent
+//    decodeURIComponent
+// sessionStorage 
+// sessionStorage.setItem("name","Saqib");
+// sessionStorage.setItem("class","14th");
+// console.log(sessionStorage.getItem("name"));
+
+
+
+
+
 
 
 
