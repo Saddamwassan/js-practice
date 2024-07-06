@@ -986,7 +986,9 @@
 // BOM
 // Cookies
 // set cookies 
-    // document.cookie = "address=walkurtTown";
+    document.cookie = "address = walkurtTown";
+    console.log("hi");
+    document.cookie = "name=Ali";
 //    encodeURIComponent
 //    decodeURIComponent
 // sessionStorage 
